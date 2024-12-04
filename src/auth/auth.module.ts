@@ -9,7 +9,7 @@ import { ConfigModule } from '@nestjs/config';
     imports: [
         ConfigModule.forRoot(),
         JwtModule.register({
-          secret: `${process.env.NODE_ENV}.env}`,
+          secret: `${process.env.NODE_ENV}}`,
           signOptions: { expiresIn: '1h' },
         },
       ),
